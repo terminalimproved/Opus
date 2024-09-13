@@ -28,7 +28,7 @@ if prompt := st.chat_input("What is up?"):
 
     # Generate response from OpenAI
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="chatgpt-4o-latest",
         messages=[{"role": "user", "content": prompt}],
     )
     bot_reply = response.choices[0].message.content
